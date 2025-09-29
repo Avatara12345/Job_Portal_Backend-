@@ -19,7 +19,7 @@ app.use(express.json())  // Config express to read a data
 app.use(cors())
 
 const hostname = process.env.HOSTNAME
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 const mongoDbURl = process.env.MONGO_DB_URL
 const database = process.env.MONGO_DATABASE
